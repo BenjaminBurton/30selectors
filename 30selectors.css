@@ -1,14 +1,22 @@
 /*Element*/
 li {
-
+text-transform: uppercase;
 }
+
+
 /*class*/
 .hello {
-
+text-transform: lowercase;
 }
-/*id*/
-#name {
 
+
+/*id*/
+#name::first-letter {
+text-transform: uppercase; 
+font-size: 3em; 
+font-weight: bold; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+letter-spacing: 5px;
 }
 
 /*Star*/
@@ -33,7 +41,8 @@ h4 + ul {
 /*Attribute Selector*/
 
 a[href="http://www.google.com"] {
-	background: rgb(255, 230, 0);
+	background: blue;
+	text-transform: lowercase;
 }
 
 /* other options for Attribute Selectors
